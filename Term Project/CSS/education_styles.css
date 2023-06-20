@@ -1,0 +1,107 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+    color: rgb(127, 79, 127);
+    height: 100vh;
+    margin: 0;
+    background-color: #ec8f8f;
+    height: 100vh;
+  }
+
+  .container {
+    height: 50vh; 
+  }
+
+  .element {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%; 
+  }
+ 
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  img {
+    display: block;
+    margin: 20px auto;
+  }
+
+ 
+
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(221, 157, 40);
+    background-color: rgb(96, 96, 90);
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #8d5879;
+    color: rgb(27, 24, 22);
+  }
+
+  #result {
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #ec8f8f;
+    white-space: pre;
+    border: none;
+  }
+
+  
+
+  .degree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border: 3px solid #e4da1a;
+    margin-bottom: 5px;
+  }
+  
+  .degree h2 {
+    font-size: 30px;
+    margin-bottom: 1px;
+    color:rgb(145, 76, 41)
+  }
+  
+  table.degree-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table.degree-table th,
+  table.degree-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #5a3434;
+  }
+  
+  table.degree-table th {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #c6c5bd;
+    color:rgb(15, 15, 15)
+  }
+
+  #returnButton {
+    display: none; /* Initially hide the button */
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(221, 157, 40);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }

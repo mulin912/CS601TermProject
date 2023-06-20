@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio - Hobbies</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        section {
+            flex-basis: calc(100% - 10px);
+            border: 2px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1px;
+        }
+    
+        h5 {
+            color: rgb(153, 157, 37); 
+            font-family: serif;
+        }
+     
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-icon"></div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">Work</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="message.html">Message</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <h1>My Hobbies</h1>
+
+    <main id="app">
+        <section>
+          <div v-if="currentImage !== earlierImage">
+            <div class="image-container">
+              <img class="image" :src="currentImage.src" :alt="currentImage.alt" @mouseover="showEarlierImage" @mouseout="showCurrentImage" style="max-width: 100%;">
+            </div>
+          </div>
+          <h3>Travel</h3>
+          <img src="images/Hawaii_Image.png" alt="Hawaii Image">
+          <h5>Japan</h5>
+          <img src="images/Japan_Image.png" alt="Japan Image">
+          <h5>Canada</h5>
+          <img src="images/Canada_Image.png" alt="Canada Image">
+          <h5>Paris</h5>
+          <img src="images/Paris_Image.png" alt="Paris Image">
+        </section>
+
+        <section>
+            <h3>Photography</h3>
+            <img src="images/HongKong_Image.png" alt="Hong Kong Image">
+            <img src="images/Shanghai_Image.png" alt="Shanghai Image">
+        </section>
+
+        <section>
+            <h3>Play Piano</h3>
+            <iframe src="https://www.youtube.com/embed/TqyLnMa3DJw" allowfullscreen></iframe>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 LIN MU. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+

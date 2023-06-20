@@ -1,0 +1,22 @@
+{
+  "degrees": [
+    {
+      "school": "Boston University",
+      "program": "Software Development",
+      "type": "MS",
+      "yearConferred": "2024 (expected)"
+    },
+    {
+      "school": "California State University East Bay",
+      "program": "Business Administration",
+      "type": "MBA",
+      "yearConferred": 2012
+    },
+    {
+      "school": "Tianjin Foreign Study University",
+      "program": "International Trade and Economics",
+      "type": "BA",
+      "yearConferred": 2010
+    }
+  ]
+}

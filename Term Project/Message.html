@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="JavaScript/message_script.js"></script>
+</head>
+
+<body>
+  <header> 
+    <div class="nav-icon"></div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">Work</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="message.html">Message</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Message Me</h1>
+  <main>
+    <form id="myForm" action="mailto:mulin912@bu.edu" method="post" onsubmit="return openMailbox(event)">
+    <label for="firstName">FIRST NAME (REQUIRED): </label>
+    <input type="text" id="firstName" name="firstName" required>
+    
+    
+    <label for="lastName">LAST NAME (REQUIRED):</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    
+    <label for="email">EMAIL ADDRESS (REQUIRED):</label>
+    <input type="text" id="email" name="email" required>
+   
+    <label for="phone">PHONE NUMBER  (REQUIRED):</label>
+    <input type="text" id="phone" name="phone" required>
+  
+
+    <label>How would you like me to reach out?</label>
+    <div class="message-container">
+        <input type="checkbox" id="value1" name="values" value="value1">
+        <label for="value1">Email</label>
+        <input type="checkbox" id="value2" name="values" value="value2">
+        <label for="value2">Phone</label>
+      </div>
+
+    <label>MESSAGE:</label>
+    <input type="text" id="message" name="message" required>
+   
+
+    <div id="errorContainer"></div>
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="confirmationMessage"></div>
+
+</main>
+ 
+<footer>
+    <p>&copy; 2023 LIN MU. All rights reserved.</p>
+</footer>
+</body>
+</html>
